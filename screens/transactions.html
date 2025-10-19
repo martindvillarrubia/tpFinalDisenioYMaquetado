@@ -6,155 +6,19 @@
     <title>Transactions</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            background: #e9eef5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        .device {
-            width: 390px;
-            height: 844px;
-            border-radius: 36px;
-            background: #ffffff;
-            box-shadow: 0 40px 80px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.6);
-            overflow: hidden;
-            position: relative;
-            border: 12px solid #111;
-        }
-        .device::before{
-            content: "";
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 160px;
-            height: 6px;
-            background: rgba(0,0,0,0.18);
-            border-radius: 6px;
-            opacity: 0.6;
-        }
-        .screen {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            background: transparent;
-            position: relative;
-        }
-        main {
-            flex: 1 1 auto;
-            overflow: auto;
-            -webkit-overflow-scrolling: touch;
-            padding: 12px;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        main::-webkit-scrollbar { width: 0; height: 0; display: none; }
-        .scroll-track{
-            position: absolute;
-            right: 10px;
-            top: 72px;
-            bottom: 84px;
-            width: 6px;
-            display: flex;
-            align-items: flex-start;
-            pointer-events: none;
-        }
-        .scroll-track .scroll-thumb{
-            width: 100%;
-            background: rgba(0,0,0,0.22);
-            border-radius: 999px;
-            transform: translateY(0);
-            transition: transform 120ms linear, height 120ms linear;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.06);
-            will-change: transform, height;
-        }
-        .scroll-track.hidden { display: none; }
-        ul.transactions {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .transaction-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px;
-            border-bottom: 1px solid #eee;
-            gap: 12px;
-            background: #fff;
-        }
-        .transaction-left {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .transaction-icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 10px;
-            background: #f5f7fb;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            color: #333;
-        }
-        .transaction-info {
-            display: flex;
-            flex-direction: column;
-        }
-        .transaction-username {
-            font-weight: 600;
-        }
-        .transaction-detail {
-            color: #6b7280;
-            font-size: 13px;
-            text-decoration: none;
-        }
-        .transaction-amount {
-            font-weight: 700;
-            white-space: nowrap;
-        }
-        .amount-positive { color: #0f9d58; }
-        .amount-negative { color: #e53935; }
-        footer.footer {
-            flex: 0 0 auto;
-            position: relative;
-            z-index: 10;
-            background: linear-gradient(transparent, rgba(255,255,255,0.9));
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            gap: 8px;
-        }
-        @media (max-width: 420px) {
-            :root { --scale: calc((100vw - 20px) / 390); }
-            .device {
-                transform: scale(var(--scale));
-                transform-origin: top center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/transactions.css">
 </head>
 <body>
     <div class="device" role="group" aria-label="Phone preview">
         <div class="screen">
-            <header class="header" style="padding:12px; display:flex; justify-content:space-between; align-items:center;">
+            <header class="header">
                 <a href="#" class="back-link">
-                    &lt; Volver
+                     &lt; Volver
                 </a>
                 <div class="header-icon" id="transaction">
                     <image src="../images/image.svg" mode=""></image>
                 </div>
-                <div class="header-icons" style="display:flex; gap:8px;">
+                <div class="header-icons">
                     <div class="header-icon">
                         <i class="bi bi-bell-fill"></i>
                         <image src="../images/white bell.svg" mode=""></image>
@@ -404,34 +268,6 @@
             </footer>
         </div>
     </div>
-    <script>
-        (function(){
-            const main = document.querySelector('main');
-            const track = document.querySelector('.scroll-track');
-            const thumb = document.querySelector('.scroll-thumb');
-            if (!main || !track || !thumb) return;
-            function updateIndicator(){
-                const contentH = main.scrollHeight;
-                const viewH = main.clientHeight;
-                if (contentH <= viewH) {
-                    track.classList.add('hidden');
-                    return;
-                } else {
-                    track.classList.remove('hidden');
-                }
-                const trackH = track.clientHeight;
-                const thumbH = Math.max((viewH / contentH) * trackH, 20);
-                thumb.style.height = thumbH + 'px';
-                const maxScroll = contentH - viewH;
-                const scrollTop = main.scrollTop;
-                const maxThumbTop = trackH - thumbH;
-                const thumbTop = (scrollTop / maxScroll) * maxThumbTop;
-                thumb.style.transform = 'translateY(' + thumbTop + 'px)';
-            }
-            main.addEventListener('scroll', updateIndicator, { passive: true });
-            window.addEventListener('resize', updateIndicator);
-            window.requestAnimationFrame(() => setTimeout(updateIndicator, 50));
-        })();
-    </script>
+    <script src="../scripts/transactions.js"></script>
 </body>
 </html>
