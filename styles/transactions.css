@@ -145,6 +145,16 @@ footer.footer .nav-item,
 footer.footer .fab {
     color: #fff;
 }
+footer.footer .fab {
+    background: #0b3d91;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
 @media (max-width: 420px) {
     :root { --scale: calc((100vw - 20px) / 390); }
     .device {
