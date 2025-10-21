@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ayuda y Configuración — Phone UI</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/phone-ui.css">
+  <link rel="stylesheet" href="../styles/transactions.css">
+  <link rel="stylesheet" href="../styles/settings.css">
+</head>
+<body>
+  <div class="device" role="group" aria-label="Phone preview">
+    <div class="screen">
+      <header class="header">
+        <a href="#" class="back-link">&lt; Volver</a>
+        <div class="header-icon" id="transaction">
+          <img src="../images/image.svg" alt="" class="icon-md">
+        </div>
+        <div class="header-icons">
+          <div class="header-icon">
+            <img src="../images/white bell.svg" alt="bell" width="24" height="24">
+          </div>
+          <div class="header-icon">
+            <img src="../images/help.svg" alt="help" width="24" height="24">
+          </div>
+        </div>
+      </header>
+
+      <main class="main-content px-3">
+        <section class="w-100" style="max-width:360px;">
+          <h6 class="settings-title mb-3">AYUDA Y CONFIGURACIÓN</h6>
+
+          <div class="settings-card p-3">
+            <div class="settings-row">
+              <div class="settings-left">
+                <div class="settings-icon">
+                  <img src="../images/help.svg" alt="" width="22" height="22" aria-hidden="true">
+                </div>
+                <span class="settings-text">Centro de ayuda</span>
+              </div>
+              <a href="#" class="settings-cta" aria-label="Abrir Centro de ayuda">›</a>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-left">
+                <div class="settings-icon">
+                  <img src="../images/white bell.svg" alt="" width="22" height="22" aria-hidden="true">
+                </div>
+                <span class="settings-text">Notificaciones</span>
+              </div>
+              <div class="form-check form-switch m-0">
+                <input class="form-check-input" type="checkbox" id="toggleNotifications" checked>
+                <label class="visually-hidden" for="toggleNotifications">Activar/Desactivar notificaciones</label>
+              </div>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-left">
+                <div class="settings-icon">
+                  <img src="../images/help.svg" alt="" width="22" height="22" aria-hidden="true" style="opacity:.0">
+                </div>
+                <span class="settings-text">Tema</span>
+              </div>
+
+              <div class="theme-pill" role="group" aria-label="Selector de tema">
+                <button type="button" class="pill-segment" id="themeLight" aria-pressed="false" title="Tema claro">
+                  <span class="pill-emoji" aria-hidden="true">☀️</span>
+                  <span class="visually-hidden">Claro</span>
+                </button>
+                <button type="button" class="pill-segment active" id="themeDark" aria-pressed="true" title="Tema oscuro">
+                  <span class="pill-emoji" aria-hidden="true">🌙</span>
+                  <span class="visually-hidden">Oscuro</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="scroll-track hidden" aria-hidden="true">
+        <div class="scroll-thumb"></div>
+      </div>
+
+      <footer class="footer">
+        <a href="#" class="nav-item">
+          <img src="../images/home.png" alt="Inicio">
+        </a>
+        <a href="#" class="nav-item">
+          <img src="../images/money.svg" alt="Transacciones" >
+        </a>
+        <a href="#" class="fab" aria-label="Menú">
+          <img src="../images/qr.svg" alt="">
+        </a>
+        <a href="#" class="nav-item">
+          <img src="../images/black bell.svg" alt="Alertas" >
+        </a>
+        <a href="#" class="nav-item active">
+          <img src="../images/settings.png" alt="Ajustes">
+        </a>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    const notif = document.getElementById('toggleNotifications');
+    if (notif) {
+      notif.addEventListener('change', () => {
+        console.log('Notificaciones:', notif.checked ? 'activadas' : 'desactivadas');
+      });
+    }
+
+    const btnLight = document.getElementById('themeLight');
+    const btnDark  = document.getElementById('themeDark');
+
+    function setTheme(mode) {
+      document.documentElement.dataset.theme = mode; 
+      btnLight.classList.toggle('active', mode === 'light');
+      btnDark.classList.toggle('active',  mode === 'dark');
+      btnLight.setAttribute('aria-pressed', mode === 'light');
+      btnDark.setAttribute('aria-pressed',  mode === 'dark');
+    }
+
+    btnLight?.addEventListener('click', () => setTheme('light'));
+    btnDark?.addEventListener('click',  () => setTheme('dark'));
+
+    setTheme('dark');
+  </script>
+</body>
+</html>

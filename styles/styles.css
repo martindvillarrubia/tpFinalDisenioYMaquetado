@@ -102,11 +102,13 @@
             background-color: #0354B166;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
-            padding: 40px 30px 20px;
+            padding: 24px 20px 16px;
             width: 90%;
             max-width: 400px;
             display: flex;
-            gap: 10px;
+            flex-direction: column;
+            gap: 8px;
+            align-items: stretch;
             position: relative;
             margin-top: -20px;
             z-index: 1;
@@ -128,9 +130,14 @@
 
         .forgot-password {
             color: #19007C;
-            font-size: 13px;
+            font-size: 12px;
             text-decoration: none;
-            text-align: right;
+            align-self: flex-start;
+            margin-left: 4px;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .forgot-password:hover {

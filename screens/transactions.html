@@ -6,163 +6,268 @@
     <title>Transactions</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/transactions.css">
 </head>
 <body>
-
-    <header class="header">
-        <a href="#" class="back-link">
-            &lt; Volver a Pantalla Principal
-        </a>
-        <div class="header-icon" id="transaction">
-            <image src="../images/image.svg" mode=""></image>
+    <div class="device" role="group" aria-label="Phone preview">
+        <div class="screen">
+            <header class="header">
+                <a href="#" class="back-link">
+                     &lt; Volver
+                </a>
+                <div class="header-icon" id="transaction">
+                    <image src="../images/image.svg" mode=""></image>
+                </div>
+                <div class="header-icons">
+                    <div class="header-icon">
+                        <i class="bi bi-bell-fill"></i>
+                        <image src="../images/white bell.svg" mode=""></image>
+                    </div>
+                    <div class="header-icon">
+                        <i class="bi bi-person-fill"></i>
+                        <image src="../images/help.svg" mode=""></image>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <ul class="transactions">
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">
+                                    <i class="bi bi-briefcase-fill"></i>
+                                </div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Username2</span>
+                                    <a href="#" class="transaction-detail">Detalle • 03 Oct</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-positive">+ $1,000,000.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">A</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Alice</span>
+                                    <a href="#" class="transaction-detail">Transferencia recibida • 02 Oct</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-positive">+ $2,450.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">S</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Spotify</span>
+                                    <a href="#" class="transaction-detail">Suscripción • 01 Oct</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $9.99</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">J</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Juan</span>
+                                    <a href="#" class="transaction-detail">Pago enviado • 30 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $120.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">P</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Pago servicios</span>
+                                    <a href="#" class="transaction-detail">Luz • 28 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $45.60</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">M</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Mercado</span>
+                                    <a href="#" class="transaction-detail">Compra • 27 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $320.25</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">T</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Transferencia</span>
+                                    <a href="#" class="transaction-detail">Banco • 25 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-positive">+ $5,000.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">G</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Gas</span>
+                                    <a href="#" class="transaction-detail">Estación • 23 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $60.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">R</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Reembolso</span>
+                                    <a href="#" class="transaction-detail">Tienda • 20 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-positive">+ $75.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">C</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Comida</span>
+                                    <a href="#" class="transaction-detail">Restaurante • 18 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $48.70</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">W</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Web Store</span>
+                                    <a href="#" class="transaction-detail">Compra online • 15 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $199.99</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">F</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Freelance</span>
+                                    <a href="#" class="transaction-detail">Pago recibido • 12 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-positive">+ $650.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">I</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Internet</span>
+                                    <a href="#" class="transaction-detail">Facturación • 10 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $39.90</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">D</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Donación</span>
+                                    <a href="#" class="transaction-detail">Organización • 08 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $20.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">S</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Salary</span>
+                                    <a href="#" class="transaction-detail">Nómina • 01 Sep</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-positive">+ $3,200.00</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">L</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Laundry</span>
+                                    <a href="#" class="transaction-detail">Servicio • 28 Aug</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $12.50</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="transaction-item">
+                            <div class="transaction-left">
+                                <div class="transaction-icon">B</div>
+                                <div class="transaction-info">
+                                    <span class="transaction-username">Bank fee</span>
+                                    <a href="#" class="transaction-detail">Comisión • 20 Aug</a>
+                                </div>
+                            </div>
+                            <div class="transaction-amount amount-negative">- $3.00</div>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+            <div class="scroll-track hidden" aria-hidden="true">
+                <div class="scroll-thumb"></div>
+            </div>
+            <footer class="footer">
+                <a href="#" class="nav-item">
+                    <i class="bi bi-house-fill"></i>
+                    <image src="../images/home.png" mode="">
+                </a>
+                <a href="#" class="nav-item active">
+                    <div class="selection">
+                        <i class="bi bi-money-fill"></i>
+                        <image src="../images/money.svg" mode=""></image>
+                    </div>
+                </a>
+                <a href="#" class="fab">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                    <image src="../images/qr.svg" mode=""></image>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="bi bi-bell-fill"></i>
+                    <image src="../images/black bell.svg" mode=""></image>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="bi bi-gear-fill"></i>
+                    <image src="../images/settings.png" mode=""></image>
+                </a>
+            </footer>
         </div>
-        <div class="header-icons">
-            <div class="header-icon">
-                <i class="bi bi-bell-fill"></i>
-                <image src="../images/white bell.svg" mode=""></image>
-            </div>
-            <div class="header-icon">
-                <i class="bi bi-person-fill"></i>
-                <image src="../images/help.svg" mode=""></image>
-            </div>
-    </header>
-
-    <main>
-        <h1 class="titulo">ÚLTIMOS MOVIMIENTOS</h1>
-        <div class="general-container">
-            <div class="transaction-item">
-                    <div class="transaction-left">
-                        <div class="transaction-icon">
-                            <i class="bi bi-money-fill"></i>
-                            <image src="../images/blue money.svg" mode=""></image>
-                        </div>
-                        <div class="transaction-info">
-                            <span class="transaction-username">Username2</span>
-                        </div>
-                    </div>
-                    <div class="date">19/10</div>
-                    <div class="transaction-amount-green">+ $1,000,000.00</div>
-            </div>
-            <div class="transaction-item">
-                    <div class="transaction-left">
-                        <div class="transaction-icon">
-                            <i class="bi bi-money-fill"></i>
-                            <image src="../images/blue money.svg" mode=""></image>
-                        </div>
-                        <div class="transaction-info">
-                            <span class="transaction-username">Username2</span>
-                        </div>
-                    </div>
-                    <div class="date">19/10</div>
-                    <div class="transaction-amount-red">- $1,000,000.00</div>
-            </div>
-            <div class="transaction-item">
-                    <div class="transaction-left">
-                        <div class="transaction-icon">
-                            <i class="bi bi-money-fill"></i>
-                            <image src="../images/blue money.svg" mode=""></image>
-                        </div>
-                        <div class="transaction-info">
-                            <span class="transaction-username">Username2</span>
-                        </div>
-                    </div>
-                    <div class="date">19/10</div>
-                    <div class="transaction-amount-green">+ $1,000,000.00</div>
-            </div>
-            <div class="transaction-item">
-                    <div class="transaction-left">
-                        <div class="transaction-icon">
-                            <i class="bi bi-money-fill"></i>
-                            <image src="../images/blue money.svg" mode=""></image>
-                        </div>
-                        <div class="transaction-info">
-                            <span class="transaction-username">Username2</span>
-                        </div>
-                    </div>
-                    <div class="date">19/10</div>
-                    <div class="transaction-amount-red">- $1,000,000.00</div>
-            </div>
-            <div class="transaction-item">
-                    <div class="transaction-left">
-                        <div class="transaction-icon">
-                            <i class="bi bi-money-fill"></i>
-                            <image src="../images/blue money.svg" mode=""></image>
-                        </div>
-                        <div class="transaction-info">
-                            <span class="transaction-username">Username2</span>
-                        </div>
-                    </div>
-                    <div class="date">19/10</div>
-                    <div class="transaction-amount-green">+ $1,000,000.00</div>
-            </div>
-            <div class="transaction-item">
-                    <div class="transaction-left">
-                        <div class="transaction-icon">
-                            <i class="bi bi-money-fill"></i>
-                            <image src="../images/blue money.svg" mode=""></image>
-                        </div>
-                        <div class="transaction-info">
-                            <span class="transaction-username">Username2</span>
-                        </div>
-                    </div>
-                    <div class="date">19/10</div>
-                    <div class="transaction-amount-red">- $1,000,000.00</div>
-            </div>
-            <div class="transaction-item">
-                    <div class="transaction-left">
-                        <div class="transaction-icon">
-                            <i class="bi bi-money-fill"></i>
-                            <image src="../images/blue money.svg" mode=""></image>
-                        </div>
-                        <div class="transaction-info">
-                            <span class="transaction-username">Username2</span>
-                        </div>
-                    </div>
-                    <div class="date">19/10</div>
-                    <div class="transaction-amount-green">+ $1,000,000.00</div>
-            </div>
-            <div class="transaction-item">
-                    <div class="transaction-left">
-                        <div class="transaction-icon">
-                            <i class="bi bi-money-fill"></i>
-                            <image src="../images/blue money.svg" mode=""></image>
-                        </div>
-                        <div class="transaction-info">
-                            <span class="transaction-username">Username2</span>
-                        </div>
-                    </div>
-                    <div class="date">19/10</div>
-                    <div class="transaction-amount-red">- $1,000,000.00</div>
-            </div>
-        </div>
-        
-    </main>
-
-
-    <footer class="footer">
-        <a href="#" class="nav-item">
-            <i class="bi bi-house-fill"></i>
-            <image src="../images/home.png" mode="">
-        </a>
-        <a href="#" class="nav-item active">
-            <div class="selection">
-                <i class="bi bi-money-fill"></i>
-                <image src="../images/money.svg" mode=""></image>
-            </div>
-        </a>
-        <a href="#" class="fab">
-            <i class="bi bi-grid-3x3-gap-fill"></i>
-            <image src="../images/qr.svg" mode=""></image>
-        </a>
-
-        <a href="#" class="nav-item">
-            <i class="bi bi-bell-fill"></i>
-            <image src="../images/black bell.svg" mode=""></image>
-        </a>
-        <a href="#" class="nav-item">
-            <i class="bi bi-gear-fill"></i>
-            <image src="../images/settings.png" mode=""></image>
-        </a>
-    </footer>
+    </div>
+    <script src="../scripts/transactions.js"></script>
 </body>
 </html>

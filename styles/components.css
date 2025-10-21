@@ -1,3 +1,89 @@
+:root{
+    --bg-page: #E6E8F2;
+    --brand-dark: #19007C;
+    --brand: #0354B1;
+    --muted-blue: rgba(3,84,177,0.4);
+    --light-transaction: #EEF6FF;
+    --transaction-icon: #E6F2FF;
+    --text-dark: #000;
+    --text-light: #E6E8F2;
+}
+*{box-sizing:border-box;}
+.top-bar{
+    width:100%;
+    height:47px;
+    background:var(--brand-dark);
+}
+.bottom-bar{
+    width:100%;
+    height:47px;
+    background:var(--brand);
+}
+.selection{
+    width:36px;
+    height:36px;
+    border-radius:15px;
+    background:#8BADD8;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+.fab{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:var(--brand-dark);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.icon-circle{
+    width:24px;
+    height:24px;
+    border-radius:9999px;
+    background:var(--text-light);
+    display:inline-block;
+}
+.transactions-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.transaction-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:12px;
+    background:var(--light-transaction);
+    border-radius:8px;
+    margin-bottom:8px;
+}
+.transaction-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.transaction-icon{
+    width:44px;
+    height:44px;
+    border-radius:10px;
+    background:var(--transaction-icon);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    color:var(--brand-dark);
+}
+.aux-muted{
+    color:var(--brand);
+    font-size:12px;
+}
+.small{
+    font-size:12px;
+}
+.hidden{display:none;}
+
 /*barra superior:*/
 
 width: 375px;
@@ -375,6 +461,22 @@ background: #E6E8F2;
                 <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
                 <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
             </div>
+            <div style="width: 32px; height: 32px; left: 23px; top: 229px; position: absolute; overflow: hidden">
+                <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
+                <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
+                <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
+                <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
+                <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
+                <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
+            </div>
+            <div style="width: 32px; height: 32px; left: 23px; top: 277px; position: absolute; overflow: hidden">
+                <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
+                <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
+                <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
+                <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
+                <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
+                <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
+            </div>
             <div style="width: 70px; height: 22px; left: 93px; top: 49px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
             <div style="width: 32px; height: 9px; left: 186px; top: 51px; position: absolute; color: black; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
             <div style="width: 32px; height: 9px; left: 186px; top: 101px; position: absolute; color: black; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
@@ -385,7 +487,7 @@ background: #E6E8F2;
             <div style="width: 70px; height: 22px; left: 93px; top: 193px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
             <div style="width: 109px; height: 22px; left: 218px; top: 48px; position: absolute; color: #00752D; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">+ $1.000.000,00</div>
             <div style="width: 105px; height: 22px; left: 221px; top: 97px; position: absolute; color: #A12727; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">- $1.000.000,00</div>
-            <div style="width: 108px; height: 22px; left: 218px; top: 146px; position: absolute; color: #00752D; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">+ $1.000.000,00</div>
+            <div style="width: 108px, height: 22px; left: 218px; top: 146px; position: absolute; color: #00752D; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">+ $1.000.000,00</div>
             <div style="width: 109px; height: 22px; left: 221px; top: 192px; position: absolute; color: #A12727; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">- $1.000.000,00</div>
             <div style="width: 55px; height: 22px; left: 280px; top: 12px; position: absolute; color: #E6E8F2; font-size: 10px; font-family: Inter; font-weight: 500; word-wrap: break-word">Ver más →</div>
             <img style="width: 32px; height: 32px; left: 308px; top: 263px; position: absolute" src="https://placehold.co/32x32" />
@@ -482,1054 +584,488 @@ background: #E6E8F2;
         font-weight: 700;
         word-wrap: break-word
         ---
-        // Ver más →
-        color: #E6E8F2;
-        font-size: 10px;
+        // + $1.000.000,00
+        color: #00752D;
+        font-size: 13px;
         font-family: Inter;
-        font-weight: 500;
+        font-weight: 700;
         word-wrap: break-word
-
-/*login*/
-
-width: 112px;
-height: 112px;
-flex-shrink: 0;
-fill: #19007C;
-
-<div style="width: 100%; height: 100%; background: #19007C; border-radius: 9999px"></div>
-
-        /*Bienvenido username*/
-
-        display: inline-flex;
-        height: 96px;
-        padding: 59px 72px 18px 71px;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-        border-radius: 15px;
-        background: #0354B1;
-
-        <div style="width: 100%; height: 100%; position: relative; background: #0354B1; border-radius: 15px">
-            <div style="left: 71px; top: 59px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 600; word-wrap: break-word">BIENVENIDO, USERNAME!</div>
-        </div>
-
-        // BIENVENIDO, USERNAME!
+        ---
+        // - $1.000.000,00
+        color: #A12727;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // Username2
         color: black;
-        font-size: 16px;
+        font-size: 12px;
         font-family: Inter;
         font-weight: 600;
         word-wrap: break-word
-
-        /*ingresar clave*/
-
-        width: 344px;
-    height: 137px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    background: rgba(3, 84, 177, 0.40);
-
-        <div style="width: 100%; height: 100%; position: relative; background: rgba(3, 84, 177, 0.40); border-radius: 15px">
-            <div style="width: 152px; height: 24px; left: 4px; top: 105px; position: absolute; background: #E6E8F2; border-radius: 99px"></div>
-            <div style="width: 142px; height: 15px; left: 9px; top: 109px; position: absolute; color: #0354B1; font-size: 12px; font-family: Inter; font-weight: 200; word-wrap: break-word">Ingrese su contraseña</div>
-            <div style="width: 142px; height: 15px; left: 202px; top: 109px; position: absolute; color: #19007C; font-size: 12px; font-family: Inter; font-weight: 200; word-wrap: break-word">¿Olvidó su contraseña?</div>
-        </div>
-
-        // Ingrese su contraseña
-        color: #0354B1;
+        ---
+        // Username2
+        color: black;
         font-size: 12px;
         font-family: Inter;
-        font-weight: 200;
+        font-weight: 600;
         word-wrap: break-word
         ---
-        // ¿Olvidó su contraseña?
-        color: #19007C;
+        // + $1.000.000,00
+        color: #00752D;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // - $1.000.000,00
+        color: #A12727;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // Username2
+        color: black;
         font-size: 12px;
         font-family: Inter;
-        font-weight: 200;
+        font-weight: 600;
         word-wrap: break-word
-
-
-/*transferencia*/
-
-width: 278px;
-height: 22px;
-flex-shrink: 0;
-color: #000;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-
-<div style="width: 100%; height: 100%; color: black; font-size: 16px; font-family: Inter; font-weight: 600; word-wrap: break-word">TRANSFERENCIA/INGRESO/RETIRO</div>
-// TRANSFERENCIA/INGRESO/RETIRO
-color: black;
- font-size: 16px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
-
-        /*monto*/
-
-        width: 273px;
-        height: 107px;
-        flex-shrink: 0;
-        color: rgba(3, 84, 177, 0.40);
-        font-family: Inter;
-        font-size: 96px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-
-        <div style="width: 100%; height: 100%; color: rgba(3, 84, 177, 0.40); font-size: 96px; font-family: Inter; font-weight: 500; word-wrap: break-word">$0,00</div>
-        // $0,00
-        color: rgba(3, 84, 177, 0.40);
-        font-size: 96px;
-        font-family: Inter;
-        font-weight: 500;
-        word-wrap: break-word
-
-        /*bloque de seleccion*/
-
-        width: 256px;
-        height: 32px;
-        flex-shrink: 0;
-        border-radius: 99px;
-        background: #19007C;
-
-        <div style="width: 100%; height: 100%; background: #19007C; border-radius: 99px"></div>
-
-        /*Boton macizo*/
-
-        width: 121px;
-        height: 31px;
-        flex-shrink: 0;
-
-        <div style="width: 100%; height: 100%; position: relative">
-            <div style="width: 128px; height: 32px; left: -4px; top: 0px; position: absolute; background: #19007C; border-radius: 60px"></div>
-            <div style="left: 41px; top: 6px; position: absolute; text-align: center; color: white; font-size: 12px; font-family: Jost; font-weight: 400; word-wrap: break-word">Aceptar</div>
-        </div>
-
-        // Aceptar
-        color: white;
+        ---
+        // Username2
+        color: black;
         font-size: 12px;
-        font-family: Jost;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // + $1.000.000,00
+        color: #00752D;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // - $1.000.000,00
+        color: #A12727;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // Username2
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Username2
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // + $1.000.000,00
+        color: #00752D;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // - $1.000.000,00
+        color: #A12727;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // Username2
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Username2
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
         font-weight: 400;
         word-wrap: break-word
-
-        /*Boton trasnparente*/
-
-        width: 121px;
-        height: 32px;
-        flex-shrink: 0;
-
-        <div style="width: 100%; height: 100%; position: relative">
-            <div style="width: 128px; height: 32px; left: -4px; top: 0px; position: absolute; background: rgba(66.05, 0, 123.84, 0); border-radius: 60px; border: 1px #19007C solid"></div>
-            <div style="left: 45px; top: 6px; position: absolute; text-align: center; color: #19007C; font-size: 12px; font-family: Jost; font-weight: 400; word-wrap: break-word">Button</div>
-        </div>
-        // Button
-        color: #19007C;
-        font-size: 12px;
-        font-family: Jost;
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
         font-weight: 400;
         word-wrap: break-word
-
-
-/*Exito*/
-
-width: 144.516px;
-height: 144.516px;
-flex-shrink: 0;
-fill: #00752D;
-<svg xmlns="http://www.w3.org/2000/svg" width="146" height="146" viewBox="0 0 146 146" fill="none">
-  <circle cx="73" cy="73" r="72.2581" fill="#00752D"/>
-</svg>
-
-<div style="width: 100%; height: 100%; background: #00752D; border-radius: 9999px"></div>
-
-/*Error*/
-
-width: 160px;
-height: 160px;
-flex-shrink: 0;
-<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
-  <circle cx="80" cy="80" r="80" fill="#E6E8F2"/>
-  <circle cx="80" cy="80" r="72.2581" fill="#A12727"/>
-</svg>
-
-<div style="width: 100%; height: 100%; position: relative">
-    <div style="width: 160px; height: 160px; left: 0px; top: 0px; position: absolute; background: #E6E8F2; border-radius: 9999px"></div>
-    <div style="width: 144.52px; height: 144.52px; left: 7.74px; top: 7.74px; position: absolute; background: #A12727; border-radius: 9999px"></div>
-</div>
-
-/*ultimos movimientos*/
-
-width: 344px;
-height: 716px;
-flex-shrink: 0;
-border-radius: 15px;
-background: #5288C8;
-
-<div style="width: 100%; height: 100%; position: relative; background: #5288C8; border-radius: 15px">
-    <div style="width: 328px; height: 40px; left: 7px; top: 35px; position: absolute; background: #E6E8F2; border-radius: 21px"></div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 83px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 131px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 179px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 227px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 275px; position: absolute; background: #E6E8F2; border-radius: 21px"></div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 35px; position: absolute">
-        <div style="width: 328px; height: 40px; left: 0px; top: 0px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    </div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 39px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 87px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 135px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 183px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 229px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 277px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 49px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 97px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 145px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 193px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 239px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 284px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 109px; height: 22px; left: 218px; top: 48px; position: absolute; color: #00752D; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">+ $1.000.000,00</div>
-    <div style="width: 105px; height: 22px; left: 221px; top: 97px; position: absolute; color: #A12727; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">- $1.000.000,00</div>
-    <div style="width: 108px; height: 22px; left: 218px; top: 146px; position: absolute; color: #00752D; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">+ $1.000.000,00</div>
-    <div style="width: 109px; height: 22px; left: 221px; top: 192px; position: absolute; color: #A12727; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">- $1.000.000,00</div>
-    <div style="width: 108px; height: 22px; left: 218px; top: 237px; position: absolute; color: #00752D; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">+ $1.000.000,00</div>
-    <div style="width: 109px; height: 22px; left: 221px; top: 283px; position: absolute; color: #A12727; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">- $1.000.000,00</div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 323px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 371px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 325px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 373px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 335px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 380px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 108px; height: 22px; left: 218px; top: 333px; position: absolute; color: #00752D; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">+ $1.000.000,00</div>
-    <div style="width: 109px; height: 22px; left: 221px; top: 379px; position: absolute; color: #A12727; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">- $1.000.000,00</div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 419px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 467px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 421px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 469px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 431px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 476px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 108px; height: 22px; left: 218px; top: 429px; position: absolute; color: #00752D; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">+ $1.000.000,00</div>
-    <div style="width: 109px; height: 22px; left: 221px; top: 475px; position: absolute; color: #A12727; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">- $1.000.000,00</div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 515px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 563px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 517px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 565px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 527px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 572px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 108px; height: 22px; left: 218px; top: 525px; position: absolute; color: #00752D; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">+ $1.000.000,00</div>
-    <div style="width: 109px; height: 22px; left: 221px; top: 571px; position: absolute; color: #A12727; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">- $1.000.000,00</div>
-    <div style="width: 328px; height: 40px; left: 7px; top: 611px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 32px; height: 32px; left: 23px; top: 613px; position: absolute; overflow: hidden">
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute"></div>
-        <div style="width: 23.77px; height: 21.87px; left: 4px; top: 2.80px; position: absolute"></div>
-        <div style="width: 24.67px; height: 11.87px; left: 3.33px; top: 2.80px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 6.67px; height: 6.67px; left: 12.67px; top: 18px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-        <div style="width: 25.33px; height: 13.33px; left: 3.33px; top: 14.67px; position: absolute; outline: 2px #19007C solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 70px; height: 22px; left: 93px; top: 620px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Username2</div>
-    <div style="width: 109px; height: 22px; left: 221px; top: 619px; position: absolute; color: #00752D; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">+ $1.000.000,00</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 53px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 103px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 152px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 199px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 241px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 291px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 340px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 387px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 433px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 483px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 532px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 579px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 625px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-</div>
-
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// + $1.000.000,00
-color: #00752D;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// - $1.000.000,00
-color: #A12727;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// + $1.000.000,00
-color: #00752D;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// - $1.000.000,00
-color: #A12727;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// + $1.000.000,00
-color: #00752D;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// - $1.000.000,00
-color: #A12727;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// + $1.000.000,00
-color: #00752D;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// - $1.000.000,00
-color: #A12727;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// + $1.000.000,00
-color: #00752D;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// - $1.000.000,00
-color: #A12727;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// + $1.000.000,00
-color: #00752D;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// - $1.000.000,00
-color: #A12727;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// Username2
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// + $1.000.000,00
-color: #00752D;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
-
-/*notificaciones*/
-
-width: 344px;
-height: 716px;
-flex-shrink: 0;
-border-radius: 15px;
-background: rgba(3, 84, 177, 0.65);
-
-<div style="width: 100%; height: 100%; position: relative; background: rgba(3, 84, 177, 0.65); border-radius: 15px">
-    <div style="width: 328px; height: 40px; left: 8px; top: 83px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 132px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 181px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 228px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 276px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 10px; top: 35px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 35px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 49px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 95px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 141px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 193px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 239px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 285px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 11px; height: 22px; left: 319px; top: 47px; position: absolute; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 105px; height: 22px; left: 222px; top: 97px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 108px; height: 22px; left: 220px; top: 146px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 109px; height: 22px; left: 220px; top: 192px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 108px; height: 22px; left: 220px; top: 237px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 109px; height: 22px; left: 220px; top: 283px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 324px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 373px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 108px; height: 22px; left: 220px; top: 333px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 109px; height: 22px; left: 220px; top: 379px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 421px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 469px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 108px; height: 22px; left: 220px; top: 429px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 109px; height: 22px; left: 220px; top: 475px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 516px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 564px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 108px; height: 22px; left: 220px; top: 525px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 109px; height: 22px; left: 220px; top: 571px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 328px; height: 40px; left: 8px; top: 612px; position: absolute; background: #E6E8F2; border-radius: 15px"></div>
-    <div style="width: 109px; height: 22px; left: 220px; top: 619px; position: absolute; text-align: right; color: #19007C; font-size: 13px; font-family: Inter; font-weight: 700; word-wrap: break-word">></div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 53px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 103px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 152px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 199px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 241px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 291px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 340px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 387px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 433px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 483px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 532px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 579px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 32px; height: 9px; left: 186px; top: 625px; position: absolute; color: #0354B1; font-size: 8px; font-family: Inter; font-weight: 400; word-wrap: break-word">DD/MM</div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 43px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 91px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 139px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 187px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 235px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 283px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 331px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 379px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 427px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 475px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 523px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 571px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 24px; height: 24px; left: 14px; top: 619px; position: absolute; overflow: hidden">
-        <div style="width: 18px; height: 21px; left: 3px; top: 2px; position: absolute; background: #19007C"></div>
-    </div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 337px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 383px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 429px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 481px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 527px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 573px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 115px; height: 22px; left: 43px; top: 622px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Texto de referencia</div>
-    <div style="width: 375px; height: 47px; left: -16px; top: 669px; position: absolute; background: #0354B1"></div>
-</div>
-
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// >
-color: #19007C;
- font-size: 13px;
- font-family: Inter;
- font-weight: 700;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// DD/MM
-color: #0354B1;
- font-size: 8px;
- font-family: Inter;
- font-weight: 400;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Texto de referencia
-color: black;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
-
-/*ayuda y configuracion*/
-
-width: 344px;
-height: 256px;
-flex-shrink: 0;
-border-radius: 15px;
-background: #0354B1;
-
-<div style="width: 100%; height: 100%; position: relative; background: #0354B1; border-radius: 15px">
-    <div style="width: 40px; height: 40px; left: 14px; top: 46px; position: absolute; overflow: hidden">
-        <div style="width: 33.33px; height: 33.33px; left: 3.33px; top: 3.33px; position: absolute; background: #E6E8F2"></div>
-    </div>
-    <div style="width: 98px; height: 22px; left: 67px; top: 58px; position: absolute; color: #E6E8F2; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Centro de ayuda</div>
-    <div style="width: 98px; height: 22px; left: 67px; top: 120px; position: absolute; color: #E6E8F2; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Notificaciones</div>
-    <div style="width: 98px; height: 22px; left: 67px; top: 189px; position: absolute; color: #E6E8F2; font-size: 12px; font-family: Inter; font-weight: 600; word-wrap: break-word">Tema</div>
-    <div style="width: 48px; height: 24px; left: 278px; top: 114px; position: absolute; background: #19007C; border-radius: 59px"></div>
-    <div style="width: 24px; height: 24px; left: 278px; top: 114px; position: absolute; background: #E6E8F2; border-radius: 9999px"></div>
-    <div style="width: 69px; height: 40px; left: 260px; top: 176px; position: absolute; background: #19007C; border-radius: 10px"></div>
-    <div style="width: 40px; height: 40px; left: 14px; top: 176px; position: absolute; overflow: hidden">
-        <div style="width: 11.38px; height: 11.38px; left: 13.34px; top: 13.34px; position: absolute; outline: 2px #E6E8F2 solid; outline-offset: -1px"></div>
-        <div style="width: 30px; height: 30px; left: 5px; top: 5px; position: absolute; outline: 2px #E6E8F2 solid; outline-offset: -1px"></div>
-    </div>
-    <div style="width: 36px; height: 40px; left: 258.50px; top: 176px; position: absolute; background: #E6E8F2; border-radius: 10px"></div>
-    <div style="width: 1px; height: 0.74px; left: 283.09px; top: 207.26px; position: absolute; background: #19007C"></div>
-    <div style="width: 24px; height: 22px; left: 265px; top: 186px; position: absolute; background: #19007C"></div>
-    <div style="width: 24px; height: 24px; left: 302px; top: 185px; position: absolute; background: #E6E8F2"></div>
-</div>
-
-// Centro de ayuda
-color: #E6E8F2;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Notificaciones
-color: #E6E8F2;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
----
-// Tema
-color: #E6E8F2;
- font-size: 12px;
- font-family: Inter;
- font-weight: 600;
- word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // >
+        color: #19007C;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // DD/MM
+        color: #0354B1;
+        font-size: 8px;
+        font-family: Inter;
+        font-weight: 400;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Texto de referencia
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Centro de ayuda
+        color: #E6E8F2;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Notificaciones
+        color: #E6E8F2;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
+        ---
+        // Tema
+        color: #E6E8F2;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 600;
+        word-wrap: break-word
 
 
 /*icono temas*/
