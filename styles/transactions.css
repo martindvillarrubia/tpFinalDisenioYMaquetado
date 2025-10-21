@@ -39,16 +39,25 @@ html, body {
     position: relative;
 }
 .header {
-    padding: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #0b3d91;
-    color: #fff;
+    position: relative;
+    min-height: 64px;
+    padding-top: 6px; 
 }
-.header-icons {
+.header .back-link {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+.header .header-icons {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    gap: 8px;
+    gap: 10px;
+    z-index: 3;
 }
 main {
     flex: 1 1 auto;
@@ -161,4 +170,71 @@ footer.footer .fab {
         transform: scale(var(--scale));
         transform-origin: top center;
     }
+}
+#transaction {
+    position: absolute;        
+    left: 50%;
+    top: calc(50% + 3px);       
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 2;
+}
+#transaction image, 
+#transaction img {
+    width: 40px;
+    height: 40px;
+}
+.center-logo {
+    width: 40px;
+    height: 40px;
+    max-width: none;
+    display: block;
+}
+@media (min-width: 768px) {
+    .center-logo {
+        width: 48px;
+        height: 48px;
+    }
+}
+.header {
+  position: relative;        
+  min-height: 64px;
+  padding-top: 6px;      
+}
+
+.header .back-link {
+  position: absolute !important;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.header .header-icons {
+  position: absolute !important;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+.device .screen .header #transaction {
+  position: absolute !important;
+  left: 50%;
+  top: calc(50% + 3px);
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2;
+}
+.btn {
+  border-radius: 30px !important;   
+  padding: 12px 0;               
+  font-weight: 600;                
 }

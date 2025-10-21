@@ -116,12 +116,29 @@ ul.transactions {
 .amount-positive { color: #0f9d58; }
 .amount-negative { color: #e53935; }
 header.header {
-    padding: 12px;
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
-    gap:12px;
+    position: relative; 
+    min-height: 64px;  
+    padding: 10px 12px 12px;      
+    display: block;
 }
+header.header .back-link {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+header.header .header-icons {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+
 .header-icon image { width: 36px; height: 36px; display:block; }
 .main-content {
     padding: 20px;
