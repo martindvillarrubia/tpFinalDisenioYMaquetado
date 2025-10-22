@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    background: #e9eef5;
+    background: #E6E8F2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +12,7 @@ html, body {
     width: 390px;
     height: 844px;
     border-radius: 36px;
-    background: #ffffff;
+    background: #E6E8F2;
     box-shadow: 0 40px 80px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.6);
     overflow: hidden;
     position: relative;
@@ -77,9 +77,9 @@ ul.transactions {
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #E6E8F2;
     gap: 12px;
-    background: #fff;
+    background: #E6E8F2;
 }
 .transaction-left {
     display: flex;
@@ -90,12 +90,12 @@ ul.transactions {
     width: 44px;
     height: 44px;
     border-radius: 10px;
-    background: #f5f7fb;
+    background: #E6E8F2;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    color: #333;
+    color: #19007C;
 }
 .transaction-info {
     display: flex;
@@ -105,7 +105,7 @@ ul.transactions {
     font-weight: 600;
 }
 .transaction-detail {
-    color: #6b7280;
+    color: #8BADD8;
     font-size: 13px;
     text-decoration: none;
 }
@@ -153,7 +153,7 @@ header.header .header-icons {
     width: 96px;
     height: 96px;
     border-radius: 50%;
-    background: #fff;
+    background: #E6E8F2;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -163,7 +163,7 @@ header.header .header-icons {
 .login-card {
     width: calc(100% - 40px);
     max-width: 320px;
-    background: #fff;
+    background: #E6E8F2;
     border-radius: 12px;
     padding: 18px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
@@ -189,7 +189,7 @@ header.header .header-icons {
 .password-input {
     padding: 12px;
     border-radius: 10px;
-    border: 1px solid #e6e9ef;
+    border: 1px solid #E6E8F2;
     outline: none;
 }
 .forgot-password {
@@ -201,8 +201,8 @@ header.header .header-icons {
 .btn-login {
     padding: 12px;
     border-radius: 10px;
-    background: #0d6efd;
-    color: #fff;
+    background: #0354B1;
+    color: #E6E8F2;
     border: none;
     cursor: pointer;
     font-size: 16px;
@@ -210,7 +210,7 @@ header.header .header-icons {
     transition: background 0.3s;
 }
 .btn-login:hover {
-    background: #0056b3;
+    background: #0354B1;
 }
 .footer {
     padding: 12px;
@@ -223,7 +223,7 @@ header.header .header-icons {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: #0d6efd;
+    background: #19007C;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,7 +237,7 @@ header.header .header-icons {
 .fingerprint-icon svg {
     width: 24px;
     height: 24px;
-    fill: #fff;
+    fill: #E6E8F2;
 }
 footer.footer {
     flex: 0 0 auto;

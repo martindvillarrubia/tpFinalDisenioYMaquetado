@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    background: #e9eef5;
+    background: #e6f2ff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +12,7 @@ html, body {
     width: 390px;
     height: 844px;
     border-radius: 36px;
-    background: #ffffff;
+    background: #e6f2ff;
     box-shadow: 0 40px 80px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.6);
     overflow: hidden;
     position: relative;
@@ -99,7 +99,7 @@ ul.transactions {
     align-items: center;
     padding: 12px;
     gap: 12px;
-    background: #eef6ff;
+    background: #e6f2ff;
     border-radius: 8px;
     margin-bottom: 8px;
     border-bottom: none;
@@ -118,7 +118,7 @@ ul.transactions {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    color: #0b3d91;
+    color: #19007C;
 }
 .transaction-info {
     display: flex;
@@ -128,7 +128,7 @@ ul.transactions {
     font-weight: 600;
 }
 .transaction-detail {
-    color: #4b5563;
+    color: #0354B1;
     font-size: 13px;
     text-decoration: none;
 }
@@ -136,8 +136,8 @@ ul.transactions {
     font-weight: 700;
     white-space: nowrap;
 }
-.amount-positive { color: #0f9d58; }
-.amount-negative { color: #e53935; }
+.amount-positive { color: #00752D; }
+.amount-negative { color: #A12727; }
 footer.footer {
     flex: 0 0 auto;
     position: relative;
@@ -148,14 +148,14 @@ footer.footer {
     justify-content: space-around;
     align-items: center;
     gap: 8px;
-    color: #fff;
+    color: #E6E8F2;
 }
 footer.footer .nav-item,
 footer.footer .fab {
-    color: #fff;
+    color: #E6E8F2;
 }
 footer.footer .fab {
-    background: #0b3d91;
+    background: #19007C;
     width: 56px;
     height: 56px;
     border-radius: 50%;

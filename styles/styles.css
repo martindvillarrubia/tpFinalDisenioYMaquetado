@@ -174,7 +174,7 @@
         }
 
         .fingerprint-icon svg {
-            fill: #9966ff;
+            fill: #E6E8F2;
         }
 
         .header-icon {
@@ -358,4 +358,12 @@
             align-items: center;
             justify-content: center;
             color: #A12727;
+        }
+
+        input::placeholder {
+            color: #8BADD8;
+        }
+
+        label {
+            color: #19007C;
         }
