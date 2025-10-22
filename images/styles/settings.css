@@ -1,0 +1,89 @@
+
+.settings-title {
+  color: #19007C;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+.settings-card {
+  background: #0354B1;                 
+  border-radius: 16px;
+  color: #E6E8F2;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+}
+.settings-row + .settings-row { margin-top: 8px; }
+
+.settings-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.settings-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 36px;
+}
+.settings-text {
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+
+.settings-cta {
+  color: #E6E8F2;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1;
+  padding: 0 6px;
+}
+
+.form-check-input[type="checkbox"] {
+  width: 46px;
+  height: 24px;
+  cursor: pointer;
+}
+.form-check-input:checked {
+  background-color: #19007C;
+  border-color: #19007C;
+}
+
+.theme-pill {
+  background: #19007C;          
+  border-radius: 12px;
+  padding: 4px;
+  display: inline-flex;
+  gap: 4px;
+}
+.pill-segment {
+  border: 0;
+  background: transparent;
+  color: #E6E8F2;
+  width: 40px;
+  height: 32px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .15s ease, transform .1s ease;
+}
+.pill-segment.active {
+  background: #E6E8F2;          
+}
+.pill-segment:active { transform: scale(.98); }
+.pill-emoji { font-size: 18px; line-height: 1; }
+
+:root[data-theme="light"] .settings-card { color: #E6E8F2; }
+:root[data-theme="light"] .theme-pill .pill-segment.active { background: #E6E8F2; color: #1a1a1a; }
