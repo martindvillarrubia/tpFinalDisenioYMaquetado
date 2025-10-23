@@ -445,20 +445,17 @@
     font-weight: 600;
 }
 
-/* Add a subtle press animation to navbar icons */
 .nav-item,
 .fab {
   transition: transform 0.2s ease;
 }
 
-/* Optional: make it feel a bit more "bouncy" */
 .nav-item:active,
 .fab:active {
   transition: transform 90ms ease-out;
   will-change: transform;
 }
 
-/* For a smoother “pop back” */
 .nav-item.animate-press,
 .fab.animate-press {
   animation: press-bounce 0.2s ease;

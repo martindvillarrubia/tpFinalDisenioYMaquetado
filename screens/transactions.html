@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transactions</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/phone-ui.css">
     <link rel="stylesheet" href="../styles/transactions.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <div class="device" role="group" aria-label="Phone preview">
         <div class="screen">
             <header class="header">
-                <a href="home.html" class="back-link">
-                     &lt; Volver
+                <a href="home.html" class="back-link" aria-label="Volver">
+                    <i class="bi bi-arrow-left-short"></i>
                 </a>
                 <div class="header-icon" id="transaction">
                     <image src="../images/image.svg" mode=""></image>
                 </div>
                 <div class="header-icons">
                     <div class="header-icon">
-                        <i class="bi bi-bell-fill"></i>
                         <a href="notifications.html">
                             <image src="../images/white bell.svg" mode=""></image>
                         </a>
                     </div>
                     <div class="header-icon">
-                        <i class="bi bi-person-fill"></i>
                         <a href="settings.html">
                             <image src="../images/help.svg" mode=""></image>
                         </a>
@@ -66,7 +68,8 @@
                                 <div class="transaction-icon">F</div>
                                 <div class="transaction-info">
                                     <span class="transaction-username">Fernando Alonso</span>
-                                    <a href="transaction-detail.html" class="transaction-detail">Pago enviado • 30 Sep</a>
+                                    <a href="transaction-detail.html" class="transaction-detail">Pago enviado • 30
+                                        Sep</a>
                                 </div>
                             </div>
                             <div class="transaction-amount amount-negative">- $33.33</div>
@@ -244,8 +247,7 @@
                         <image src="../images/money.svg" mode=""></image>
                     </div>
                 </a>
-                <a href="#" class="fab">
-                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                <a href="#" class="fab" aria-label="Menú">
                     <image src="../images/qr.svg" mode=""></image>
                 </a>
                 <a href="notifications.html" class="nav-item">
@@ -262,4 +264,5 @@
     <script src="../scripts/transactions.js"></script>
     <script src="../scripts/navbarAnimation.js"></script>
 </body>
+
 </html>

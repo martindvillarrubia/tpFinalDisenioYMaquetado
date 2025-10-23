@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,103 +9,106 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/phone-ui.css">
     <link rel="stylesheet" href="../styles/transactions.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
-    <div class="device" role="group" aria-label="Phone preview">
-        <div class="screen">
-            <header class="header">
-                <a href="home.html" class="back-link">&lt; Volver</a>
-                <div class="header-icon" id="transaction">
-                    <img src="../images/image.svg" alt="logo" width="36" height="36">
-                </div>
-                <div class="header-icons">
-                    <div class="header-icon">
-                        <i class="bi bi-bell-fill"></i>
-                        <a href="notifications.html">
-                            <img src="../images/white bell.svg" alt="bell" width="24" height="24">
-                        </a>
-                    </div>
-                    <div class="header-icon">
-                        <i class="bi bi-person-fill"></i>
-                        <a href="settings.html">
-                            <img src="../images/help.svg" alt="help" width="24" height="24">
-                        </a>
-                    </div>
-                </div>
-            </header>
-
-            <main class="main-content px-3">
-                <section class="w-100" style="max-width:360px;">
-                    <h6 class="small mb-3" style="color:#0b2143; font-weight:700">OPERACIÓN</h6>
-
-                    <div class="login-card mb-4">
-                        <div class="amount-wrapper" style="width:100%; display:flex; flex-direction:column; align-items:center; gap:8px; overflow:hidden;">
-                            <input id="amount" class="amount-input" type="text" inputmode="decimal" placeholder="$0,00"
-                                data-base-size="96"
-                                style="font-size:96px; color:rgba(11,61,145,0.35); line-height:1; font-weight:700; text-align:center; border:none; background:transparent; padding:0; width:100%; white-space:nowrap; display:inline-block; transform-origin:center;"
-                                aria-label="Monto a transferir">
-                        </div>
-                    </div>
-
-                    <label class="form-label mb-1" style="font-weight:600;">De:</label>
-                    <select class="form-select mb-3" aria-label="Cuenta origen">
-                        <option selected>Seleccione cuenta...</option>
-                        <option>Cuenta 1</option>
-                        <option>Cuenta 2</option>
-                    </select>
-
-                    <label class="form-label mb-1" style="font-weight:600;">Para:</label>
-                    <select class="form-select mb-3" aria-label="Cuenta destino">
-                        <option selected>Seleccione cuenta...</option>
-                        <option>Contacto A</option>
-                        <option>Contacto B</option>
-                    </select>
-
-                    <label class="form-label mb-1" style="font-weight:600;">Motivo</label>
-                    <select class="form-select mb-4" aria-label="Motivo">
-                        <option selected>Motivo</option>
-                        <option>Pago</option>
-                        <option>Transferencia</option>
-                        <option>Ingreso</option>
-                    </select>
-
-                    <div class="d-flex justify-content-between gap-3 mb-4">
-                        <a href="success.html" class="btn btn-primary flex-grow-1">Aceptar</a>
-                        <a href="fail.html" class="btn btn-outline-primary flex-grow-1">Cancelar</a>
-                    </div>
-                </section>
-            </main>
-
-            <div class="scroll-track hidden" aria-hidden="true">
-                <div class="scroll-thumb"></div>
+<div class="device" role="group" aria-label="Phone preview">
+    <div class="screen">
+        <header class="header">
+            <a href="home.html" class="back-link" aria-label="Volver">
+                <i class="bi bi-arrow-left-short"></i>
+            </a>
+            <div class="header-icon" id="transaction">
+                <img src="../images/image.svg" alt="logo" width="36" height="36">
             </div>
-
-            <footer class="footer">
-                <a href="#" class="nav-item">
-                    <i class="bi bi-house-fill"></i>
-                    <image src="../images/home.png" mode="">
-                </a>
-                <a href="#" class="nav-item active">
-                    <div class="selection">
-                        <i class="bi bi-money-fill"></i>
-                        <image src="../images/money.svg" mode=""></image>
-                    </div>
-                </a>
-                <a href="#" class="fab">
-                    <i class="bi bi-grid-3x3-gap-fill"></i>
-                    <image src="../images/qr.svg" mode=""></image>
-                </a>
-                <a href="#" class="nav-item">
+            <div class="header-icons">
+                <div class="header-icon">
                     <i class="bi bi-bell-fill"></i>
-                    <image src="../images/black bell.svg" mode=""></image>
-                </a>
-                <a href="#" class="nav-item">
-                    <i class="bi bi-gear-fill"></i>
-                    <image src="../images/settings.png" mode=""></image>
-                </a>
-            </footer>
+                    <a href="notifications.html">
+                        <img src="../images/white bell.svg" alt="bell" width="24" height="24">
+                    </a>
+                </div>
+                <div class="header-icon">
+                    <i class="bi bi-person-fill"></i>
+                    <a href="settings.html">
+                        <img src="../images/help.svg" alt="help" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content px-3">
+            <section class="w-100" style="max-width:360px;">
+                <h6 class="small mb-3" style="color:#0b2143; font-weight:700">OPERACIÓN</h6>
+
+                <div class="login-card mb-4">
+                    <div class="amount-wrapper"
+                        style="width:100%; display:flex; flex-direction:column; align-items:center; gap:8px; overflow:hidden;">
+                        <input id="amount" class="amount-input" type="text" inputmode="decimal" placeholder="$0,00"
+                            data-base-size="96"
+                            style="font-size:96px; color:rgba(11,61,145,0.35); line-height:1; font-weight:700; text-align:center; border:none; background:transparent; padding:0; width:100%; white-space:nowrap; display:inline-block; transform-origin:center;"
+                            aria-label="Monto a transferir">
+                    </div>
+                </div>
+
+                <label class="form-label mb-1" style="font-weight:600;">De:</label>
+                <select class="form-select mb-3" aria-label="Cuenta origen">
+                    <option selected>Seleccione cuenta...</option>
+                    <option>Cuenta 1</option>
+                    <option>Cuenta 2</option>
+                </select>
+
+                <label class="form-label mb-1" style="font-weight:600;">Para:</label>
+                <select class="form-select mb-3" aria-label="Cuenta destino">
+                    <option selected>Seleccione cuenta...</option>
+                    <option>Contacto A</option>
+                    <option>Contacto B</option>
+                </select>
+
+                <label class="form-label mb-1" style="font-weight:600;">Motivo</label>
+                <select class="form-select mb-4" aria-label="Motivo">
+                    <option selected>Motivo</option>
+                    <option>Pago</option>
+                    <option>Transferencia</option>
+                    <option>Ingreso</option>
+                </select>
+
+                <div class="d-flex justify-content-between gap-3 mb-4">
+                    <a href="success.html" class="btn btn-primary flex-grow-1">Aceptar</a>
+                    <a href="fail.html" class="btn btn-outline-primary flex-grow-1">Cancelar</a>
+                </div>
+            </section>
+        </main>
+
+        <div class="scroll-track hidden" aria-hidden="true">
+            <div class="scroll-thumb"></div>
         </div>
+
+        <footer class="footer">
+            <a href="home.html" class="nav-item">
+                <i class="bi bi-house-fill"></i>
+                <image src="../images/home.png" mode="">
+            </a>
+            <a href="transactions.html" class="nav-item active">
+                <div class="selection">
+                    <i class="bi bi-money-fill"></i>
+                    <image src="../images/money.svg" mode=""></image>
+                </div>
+            </a>
+            <a href="#" class="fab">
+                <image src="../images/qr.svg" mode=""></image>
+            </a>
+            <a href="notification.html" class="nav-item">
+                <i class="bi bi-bell-fill"></i>
+                <image src="../images/black bell.svg" mode=""></image>
+            </a>
+            <a href="settings.html" class="nav-item">
+                <i class="bi bi-gear-fill"></i>
+                <image src="../images/settings.png" mode=""></image>
+            </a>
+        </footer>
     </div>
-    <script src="../scripts/transfer.js"></script>
+</div>
+<script src="../scripts/transfer.js"></script>
 </body>
+
 </html>
