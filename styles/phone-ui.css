@@ -141,13 +141,8 @@ header.header .header-icons {
 
 .header-icon image { width: 36px; height: 36px; display:block; }
 .main-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    flex: 1 1 auto;
-    overflow: auto;
+    padding: 10px 20px 20px; /* top | horizontal | bottom */
+  gap: 14px;              /* optional: tighten spacing between sections */
 }
 .avatar-circle {
     width: 96px;

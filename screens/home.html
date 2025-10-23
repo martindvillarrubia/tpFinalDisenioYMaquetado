@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,15 @@
     <link rel="stylesheet" href="../styles/settings.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
+
 <body>
     <div class="device" role="group" aria-label="Phone preview">
         <div class="screen">
             <header class="header">
-                    <div class="welcome-text">
-                        <img src="../images/image.svg" alt="logo">
-                        Bienvenido, Username!
-                    </div>
+                <div class="welcome-text">
+                    <img src="../images/image.svg" alt="logo">
+                    Bienvenido, Username!
+                </div>
                 <div class="header-icons">
                     <div class="header-icon">
                         <i class="bi bi-bell-fill"></i>
@@ -34,38 +36,195 @@
             </header>
 
             <main class="main-content px-3">
-        <section class="w-100" style="max-width:360px;">
+                <section class="w-100" style="max-width:360px;">
 
-          <div class="saldo-card">
-    <h3 class="saldo-title">SALDO</h3>
-    <div class="saldo-body">
-        <p class="saldo-amount">$ 1.500.000,00</p>
-        <div class="saldo-actions">
-            <div class="saldo-action">
-                <a href="transfer.html">
-                    <img src="../images/ingress.svg" alt="Ingresar">                    
-                </a>
-                <span>Ingresar</span>
-            </div>
-            <div class="saldo-action">
-                <a href="transfer.html">
-                    <img src="../images/egress.svg" alt="Ingresar">                    
-                </a>                
-                <span>Retirar</span>
-            </div>
-            <div class="saldo-action">
-                <a href="transfer.html">
-                    <img src="../images/transfer.svg" alt="Ingresar">                    
-                </a>
-                <span>Transferir</span>
-            </div>
-            <div class="saldo-action">
-                <img src="../images/usd.svg" alt="US$">
-                <span>US$</span>
-            </div>
-        </div>
-    </div>
-</div>
+                    <div class="saldo-card">
+                        <h3 class="saldo-title">SALDO</h3>
+                        <div class="saldo-body">
+                            <p class="saldo-amount">$ 1.500.000,00</p>
+                            <div class="saldo-actions">
+                                <div class="saldo-action">
+                                    <a href="transfer.html">
+                                        <img src="../images/ingress.svg" alt="Ingresar">
+                                    </a>
+                                    <span>Ingresar</span>
+                                </div>
+                                <div class="saldo-action">
+                                    <a href="transfer.html">
+                                        <img src="../images/egress.svg" alt="Ingresar">
+                                    </a>
+                                    <span>Retirar</span>
+                                </div>
+                                <div class="saldo-action">
+                                    <a href="transfer.html">
+                                        <img src="../images/transfer.svg" alt="Ingresar">
+                                    </a>
+                                    <span>Transferir</span>
+                                </div>
+                                <div class="saldo-action">
+                                    <img src="../images/usd.svg" alt="US$">
+                                    <span>US$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-card mt-3" id="rendimientos">
+                        <div class="panel-title-row">
+                            <h6 class="panel-title">RENDIMIENTOS</h6>
+
+                            <div class="pill-switch" role="tablist" aria-label="Periodo">
+                                <button class="pill active" type="button" role="tab" aria-selected="true"
+                                    data-view="month" aria-controls="chart-month">Mensual</button>
+                                <button class="pill" type="button" role="tab" aria-selected="false" data-view="year"
+                                    aria-controls="chart-year">Anual</button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="chart-box" aria-live="polite">
+                            <svg class="chart chart-month" viewBox="0 0 320 120" preserveAspectRatio="none" role="img">
+                                <title>Rendimientos: Mensual (ejemplo)</title>
+
+                                <polyline points="16,90 54,78 92,84 130,70 168,64 206,58 244,68 282,56 316,52"
+                                    fill="none" stroke="#ff00b8" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+
+                                <line x1="24" y1="100" x2="24" y2="70" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="20" y="86" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="62" y1="94" x2="62" y2="66" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="58" y="78" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="100" y1="96" x2="100" y2="74" stroke-width="2" stroke="#ff6161" />
+                                <rect x="96" y="84" width="8" height="8" rx="2" fill="#ff6161" />
+
+                                <line x1="138" y1="88" x2="138" y2="60" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="134" y="72" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="176" y1="82" x2="176" y2="56" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="172" y="64" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="214" y1="78" x2="214" y2="52" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="210" y="60" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="252" y1="88" x2="252" y2="60" stroke-width="2" stroke="#ff6161" />
+                                <rect x="248" y="72" width="8" height="10" rx="2" fill="#ff6161" />
+
+                                <line x1="290" y1="76" x2="290" y2="48" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="286" y="56" width="8" height="10" rx="2" fill="#2ce37a" />
+                            </svg>
+
+                            <svg class="chart chart-year is-hidden" viewBox="0 0 320 180" preserveAspectRatio="none"
+                                role="img">
+                                <title>Rendimientos: anual (ejemplo)</title>
+
+                                <polyline
+                                    points="16,128 44,116 72,122 100,110 128,102 156,96 184,86 212,92 240,80 268,74 296,68 316,64"
+                                    fill="none" stroke="#ff00b8" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+
+                                <line x1="20" y1="140" x2="20" y2="110" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="16" y="124" width="8" height="12" rx="2" fill="#2ce37a" />
+
+                                <line x1="48" y1="132" x2="48" y2="100" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="44" y="116" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="76" y1="136" x2="76" y2="112" stroke-width="2" stroke="#ff6161" />
+                                <rect x="72" y="122" width="8" height="10" rx="2" fill="#ff6161" />
+
+                                <line x1="104" y1="128" x2="104" y2="98" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="100" y="110" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="132" y1="120" x2="132" y2="90" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="128" y="102" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="160" y1="114" x2="160" y2="86" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="156" y="96" width="8" height="12" rx="2" fill="#2ce37a" />
+
+                                <line x1="188" y1="106" x2="188" y2="78" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="184" y="86" width="8" height="12" rx="2" fill="#2ce37a" />
+
+                                <line x1="216" y1="110" x2="216" y2="86" stroke-width="2" stroke="#ff6161" />
+                                <rect x="212" y="92" width="8" height="10" rx="2" fill="#ff6161" />
+
+                                <line x1="244" y1="98" x2="244" y2="72" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="240" y="80" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="272" y1="92" x2="272" y2="68" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="268" y="74" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="300" y1="86" x2="300" y2="62" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="296" y="68" width="8" height="10" rx="2" fill="#2ce37a" />
+
+                                <line x1="328" y1="82" x2="328" y2="58" stroke-width="2" stroke="#2ce37a" />
+                                <rect x="324" y="64" width="8" height="10" rx="2" fill="#2ce37a" />
+                            </svg>
+                        </div>
+
+
+                    </div>
+
+                    <div class="panel-card mt-3">
+                        <div class="panel-title-row">
+                            <h6 class="panel-title">ÚLTIMOS MOVIMIENTOS</h6>
+                            <a class="see-more" href="transactions.html">Ver más →</a>
+                        </div>
+                        <ul class="transactions home-transactions">
+                            <li>
+                                <div class="transaction-item">
+                                    <div class="transaction-left">
+                                        <div class="transaction-icon">A</div>
+                                        <div class="transaction-info">
+                                            <span class="transaction-username">Alice</span>
+                                            <a href="#" class="transaction-detail">Transferencia recibida • 02 Oct</a>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-amount amount-positive">+ $2,450.00</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="transaction-item">
+                                    <div class="transaction-left">
+                                        <div class="transaction-icon">S</div>
+                                        <div class="transaction-info">
+                                            <span class="transaction-username">Spotify</span>
+                                            <a href="#" class="transaction-detail">Suscripción • 01 Oct</a>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-amount amount-negative">- $9.99</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="transaction-item">
+                                    <div class="transaction-left">
+                                        <div class="transaction-icon">J</div>
+                                        <div class="transaction-info">
+                                            <span class="transaction-username">Fernando Alonso</span>
+                                            <a href="transaction-detail.html" class="transaction-detail">Pago enviado • 30 Sep</a>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-amount amount-negative">- $33.33</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="transaction-item">
+                                    <div class="transaction-left">
+                                        <div class="transaction-icon">P</div>
+                                        <div class="transaction-info">
+                                            <span class="transaction-username">Pago servicios</span>
+                                            <a href="#" class="transaction-detail">Luz • 28 Sep</a>
+                                        </div>
+                                    </div>
+                                    <div class="transaction-amount amount-negative">- $45.60</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
 
 
             </main>
@@ -82,8 +241,8 @@
                     </div>
                 </a>
                 <a href="transactions.html" class="nav-item">
-                        <i class="bi bi-money-fill"></i>
-                        <image src="../images/money.svg" mode=""></image>
+                    <i class="bi bi-money-fill"></i>
+                    <image src="../images/money.svg" mode=""></image>
                 </a>
                 <a href="#" class="fab">
                     <i class="bi bi-grid-3x3-gap-fill"></i>
@@ -102,28 +261,56 @@
     </div>
     <script src="../scripts/transactions.js"></script>
     <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const saldoTexto = document.querySelector(".saldo-amount");
-    const botonUSD = document.querySelector(".saldo-action img[alt='US$']");
-    const tasa = 1500;
-    let enDolares = false;
+        document.addEventListener("DOMContentLoaded", () => {
+            const saldoTexto = document.querySelector(".saldo-amount");
+            const botonUSD = document.querySelector(".saldo-action img[alt='US$']");
+            const tasa = 1500;
+            let enDolares = false;
 
-    botonUSD.addEventListener("click", () => {
-        let valorTexto = saldoTexto.textContent.replace(/[^0-9,]/g, '').replace(',', '.');
-        let valor = parseFloat(valorTexto);
+            botonUSD.addEventListener("click", () => {
+                let valorTexto = saldoTexto.textContent.replace(/[^0-9,]/g, '').replace(',', '.');
+                let valor = parseFloat(valorTexto);
 
-        if (!enDolares) {
-            valor = valor / tasa;
-            saldoTexto.textContent = `US$ ${valor.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-            enDolares = true;
-        } else {
-            valor = valor * tasa;
-            saldoTexto.textContent = `$ ${valor.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-            enDolares = false;
-        }
-    });
-});
-</script>
+                if (!enDolares) {
+                    valor = valor / tasa;
+                    saldoTexto.textContent = `US$ ${valor.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+                    enDolares = true;
+                } else {
+                    valor = valor * tasa;
+                    saldoTexto.textContent = `$ ${valor.toLocaleString('es-AR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+                    enDolares = false;
+                }
+            });
+        });
+        (function () {
+            const card = document.getElementById('rendimientos');
+            if (!card) return;
+
+            const pills = card.querySelectorAll('.pill-switch .pill');
+            const month = card.querySelector('#chart-month');
+            const year = card.querySelector('#chart-year');
+
+            function show(view) {
+                const isMonth = view === 'month';
+                month.hidden = !isMonth;
+                year.hidden = isMonth;
+            }
+
+            pills.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const view = btn.dataset.view;
+                    pills.forEach(b => {
+                        const active = b === btn;
+                        b.classList.toggle('active', active);
+                        b.setAttribute('aria-selected', active ? 'true' : 'false');
+                    });
+                    show(view);
+                });
+            });
+        })();
+    </script>
+    <script defer src="../scripts/navbarAnimation.js"></script>
 
 </body>
+
 </html>

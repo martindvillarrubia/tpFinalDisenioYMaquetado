@@ -27,3 +27,22 @@
         updateIndicator();
     });
 })();
+
+(function(){
+    const box = document.querySelector('.chart-box');
+    const month = box.querySelector('.chart-month');
+    const year  = box.querySelector('.chart-year');
+    const pills = document.querySelectorAll('.pill-switch .pill');
+
+    pills.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const view = btn.dataset.view;
+
+        pills.forEach(b => { b.classList.toggle('active', b === btn); b.setAttribute('aria-selected', b === btn); });
+
+        const isMonth = view === 'month';
+        month.classList.toggle('is-hidden', !isMonth);
+        year.classList.toggle('is-hidden', isMonth);
+      });
+    });
+  })();

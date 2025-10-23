@@ -46,14 +46,11 @@
         const text = input.value || input.placeholder || '$0,00';
         const avail = availableWidth();
 
-        // quick path if base size already fits
         if (measureAtSize(text, baseSize) <= avail) {
             input.style.fontSize = baseSize + 'px';
             input.style.lineHeight = Math.ceil(baseSize) + 'px';
             return;
         }
-
-        // binary search for largest font size that fits
         let low = minSize;
         let high = baseSize;
         let best = minSize;
@@ -70,7 +67,6 @@
         }
 
         input.style.fontSize = best + 'px';
-        // keep element height fixed so layout doesn't shift
         input.style.lineHeight = Math.ceil(baseSize) + 'px';
     }
 
