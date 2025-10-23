@@ -13,25 +13,29 @@
     <div class="device" role="group" aria-label="Phone preview">
         <div class="screen">
             <header class="header">
-                <a href="#" class="back-link">&lt; Volver</a>
+                <a href="home.html" class="back-link">&lt; Volver</a>
                 <div class="header-icon" id="transaction">
                     <img src="../images/image.svg" alt="logo" width="36" height="36">
                 </div>
                 <div class="header-icons">
                     <div class="header-icon">
                         <i class="bi bi-bell-fill"></i>
-                        <img src="../images/white bell.svg" alt="bell" width="24" height="24">
+                        <a href="notifications.html">
+                            <img src="../images/white bell.svg" alt="bell" width="24" height="24">
+                        </a>
                     </div>
                     <div class="header-icon">
                         <i class="bi bi-person-fill"></i>
-                        <img src="../images/help.svg" alt="help" width="24" height="24">
+                        <a href="settings.html">
+                            <img src="../images/help.svg" alt="help" width="24" height="24">
+                        </a>
                     </div>
                 </div>
             </header>
 
             <main class="main-content px-3">
                 <section class="w-100" style="max-width:360px;">
-                    <h6 class="small mb-3" style="color:#0b2143; font-weight:700">TRANSFERENCIA/INGRESO/RETIRO</h6>
+                    <h6 class="small mb-3" style="color:#0b2143; font-weight:700">OPERACIÓN</h6>
 
                     <div class="login-card mb-4">
                         <div class="amount-wrapper" style="width:100%; display:flex; flex-direction:column; align-items:center; gap:8px; overflow:hidden;">
@@ -61,11 +65,12 @@
                         <option selected>Motivo</option>
                         <option>Pago</option>
                         <option>Transferencia</option>
+                        <option>Ingreso</option>
                     </select>
 
                     <div class="d-flex justify-content-between gap-3 mb-4">
-                        <button class="btn btn-primary flex-grow-1" type="button">Aceptar</button>
-                        <button class="btn btn-outline-primary flex-grow-1" type="button">Cancelar</button>
+                        <a href="success.html" class="btn btn-primary flex-grow-1">Aceptar</a>
+                        <a href="fail.html" class="btn btn-outline-primary flex-grow-1">Cancelar</a>
                     </div>
                 </section>
             </main>

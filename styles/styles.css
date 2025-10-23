@@ -367,3 +367,81 @@
         label {
             color: #19007C;
         }
+
+        .header .welcome-text {
+            position: absolute;
+            left: 33%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: #E6E8F2;
+            font-weight: 600;
+            font-size: 16px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .header .welcome-text img {
+            width: 36px;
+            height: 36px;
+        }
+
+        .saldo-card {
+    background-color: #0354B1;
+    border-radius: 20px;
+    width: 320px;
+    padding: 20px;
+    color: #E6E8F2;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.saldo-title {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.saldo-body {
+    background-color: #E6E8F2;
+    border-radius: 16px;
+    padding: 20px;
+    color: black;
+    text-align: left;
+}
+
+.saldo-amount {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.saldo-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.saldo-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    background-color: #0354B166;
+    border-radius: 50%;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+.saldo-action img {
+    width: 28px;
+    height: 28px;
+}
+
+.saldo-action span {
+    font-size: 12px;
+    color: #0354B1;
+    align-self: center;
+    justify-self: center;
+    font-weight: 600;
+}
+

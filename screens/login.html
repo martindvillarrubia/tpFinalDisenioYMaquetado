@@ -29,7 +29,7 @@
                 </div>
                 <div class="password-block">
                     <input type="password" class="password-input" placeholder="Ingrese su contraseña">
-                    <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+                    <a href="support.html" class="forgot-password">¿Olvidó su contraseña?</a>
                 </div>
             </main>
             <div class="scroll-track hidden" aria-hidden="true">
@@ -46,5 +46,16 @@
             </footer>
         </div>
     </div>
+    <script>
+    const url = 'home.html';
+
+    document.addEventListener('keydown', function (e) {
+
+      if (e.key === 'Enter' || e.keyCode === 13) {
+        window.location.href = url; 
+      }
+    });
+
+    </script>
 </body>
 </html>
